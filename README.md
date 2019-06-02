@@ -19,8 +19,10 @@ The first Matlab code saves characters of DTMF table as a matrix and each of two
 - DTFM <br/>
   - [WikiPedia](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) <br/>
 - Goertzel algorithm <br/>
- - [WikiPedia](https://en.wikipedia.org/wiki/Goertzel_algorithm)<br/>
- - [Matlab Doc](https://www.mathworks.com/help/signal/ref/goertzel.html)
-- Descrete Fourier Transform
- - [Lecture 7 - TheDiscreteFourierTransform](http://www.robots.ox.ac.uk/%7Esjrob/Teaching/SP/l7.pdf)
- - [How to Interpret FFT results – complex DFT, frequency bins and FFTShift](https://www.gaussianwaves.com/2015/11/interpreting-fft-results-complex-dft-frequency-bins-and-fftshift/)
+  - [WikiPedia](https://en.wikipedia.org/wiki/Goertzel_algorithm)<br/>
+  - [Matlab Doc](https://www.mathworks.com/help/signal/ref/goertzel.html)<br/>
+- Descrete Fourier Transform<br/>
+  - [Lecture 7 - TheDiscreteFourierTransform](http://www.robots.ox.ac.uk/%7Esjrob/Teaching/SP/l7.pdf)<br/>
+  - [How to Interpret FFT results – complex DFT, frequency bins and FFTShift](https://www.gaussianwaves.com/2015/11/interpreting-fft-results-complex-dft-frequency-bins-and-fftshift/)<br/>
+- Test Decoder
+  - [Generate DTFM tone](http://www.dialabc.com/sound/generate/)
