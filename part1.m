@@ -14,7 +14,8 @@ second = 0;
 
 for chr = in
    % first we determine the 2 tones for each of chars     
-   if isletter(chr)
+   if isletter(chr) && ((chr >='A' && chr <= 'D')...
+           ||(chr >='a' && chr <= 'd'))
       first = DTMF_table(11+(upper(chr)-'A')).first;
       second = DTMF_table(11+(upper(chr)-'A')).second;
    elseif chr == '*'
@@ -23,7 +24,7 @@ for chr = in
    elseif chr == '#'
        first = DTMF_table(16).first;
        second = DTMF_table(16).second;
-   else
+   elseif chr >= '0' && chr <= '9'
        num = str2num(chr);
        if num > 0
            first = DTMF_table(num).first;
@@ -32,6 +33,10 @@ for chr = in
            first = DTMF_table(10).first;
            second = DTMF_table(10).second;
        end
+   else
+       txt = [chr, ' is unsupported'];
+       disp(txt);
+       continue
    end
    % then we make two signals with those tones
    x1 = sin(2*pi*first*t);
